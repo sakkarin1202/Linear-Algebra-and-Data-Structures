@@ -1,0 +1,32 @@
+/* ขยายพื้นที่ของโฟลเดอร์ */
+.folder {
+    margin-left: 30px; /* เพิ่ม margin-left เพื่อขยายพื้นที่ของโฟลเดอร์ */
+}
+
+/* ขยายพื้นที่ของไฟล์ */
+.file {
+    margin-left: 20px; /* รักษา margin-left ของไฟล์เดิม */
+}
+
+/* ตกแต่ง icon สำหรับโฟลเดอร์ */
+.folder::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+    background-image: url('OIP.jpg'); /* ใส่ icon สำหรับโฟลเดอร์ */
+}
+
+/* ตกแต่ง icon สำหรับไฟล์ */
+.file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+    background-image: url('file.jpg'); /* ใส่ icon สำหรับไฟล์ */
+}
+
